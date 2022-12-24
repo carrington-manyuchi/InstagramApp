@@ -18,6 +18,16 @@ class StoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        storyImage.layer.cornerRadius = storyImage.frame.width / 2
+        
+        storyImage.layer.masksToBounds = true
+        
+        storyImage.layer.borderColor = UIColor.white.cgColor
+        
+        storyImage.layer.borderWidth = CGFloat(3.3)
+        
     }
 
 }

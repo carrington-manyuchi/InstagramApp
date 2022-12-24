@@ -57,13 +57,33 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return posts.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableViewCell") as! StoriesTableViewCell
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell") as! FeedTableViewCell
+        
+        let currentIndex = indexPath.row - 1
+        
+        let postData = posts[currentIndex]
+        
+        cell.postImage.image = postData.postImage
+        
+        cell.dateLabel.text = postData.datePosted
+        
+        cell.likesCountLabel.text = "\(postData.likesCount) likes"
+        
+        cell.postCommentLabel.text = postData.postComment
+        
+        cell.userNameTitleButton.setTitle(postData.user.name, for: .normal)
+        
         return cell
+        
     }
 
 }
