@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,19 +15,45 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ape-Tp-FKJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pK0-m2-kKN"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l2T-ws-ht8">
+                                <rect key="frame" x="1" y="106" width="412" height="705"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="RbH-gM-LRq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nYg-mp-zgd"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.61568627450000002" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l2T-ws-ht8" firstAttribute="top" secondItem="ape-Tp-FKJ" secondAttribute="bottom" constant="2" id="C0a-n9-4VB"/>
+                            <constraint firstItem="l2T-ws-ht8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OtT-BD-Zem"/>
+                            <constraint firstItem="ape-Tp-FKJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XkO-O3-sNW"/>
+                            <constraint firstItem="ape-Tp-FKJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="amr-XK-eOZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="l2T-ws-ht8" secondAttribute="trailing" id="c5u-Vv-6vf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="l2T-ws-ht8" secondAttribute="bottom" constant="2" id="jxy-1j-sAk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ape-Tp-FKJ" secondAttribute="trailing" id="qBt-wq-RZM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="activity_tab_icon" selectedImage="activity_selected_tab_icon" id="JRj-0R-qof"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="89"/>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="activity_selected_tab_icon" width="52" height="48"/>
         <image name="activity_tab_icon" width="52" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
