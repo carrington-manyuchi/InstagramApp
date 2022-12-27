@@ -27,7 +27,8 @@
 		237E423229597C1E00BC4597 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E423129597C1E00BC4597 /* CustomSegmentedControl.swift */; };
 		237E42352959800200BC4597 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E42332959800200BC4597 /* ActivityTableViewCell.swift */; };
 		237E42362959800200BC4597 /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237E42342959800200BC4597 /* ActivityTableViewCell.xib */; };
-		237E42382959837100BC4597 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E42372959837100BC4597 /* ActivityView.swift */; };
+		237E423A295AC05B00BC4597 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E4239295AC05B00BC4597 /* ActivityView.swift */; };
+		237E423C295AC08E00BC4597 /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237E423B295AC08E00BC4597 /* ActivityView.xib */; };
 		23BBDF3729546E7800313A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBDF3629546E7800313A4B /* AppDelegate.swift */; };
 		23BBDF3929546E7800313A4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBDF3829546E7800313A4B /* SceneDelegate.swift */; };
 		23BBDF3B29546E7800313A4B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBDF3A29546E7800313A4B /* HomeViewController.swift */; };
@@ -88,7 +89,8 @@
 		237E423129597C1E00BC4597 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		237E42332959800200BC4597 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		237E42342959800200BC4597 /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
-		237E42372959837100BC4597 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		237E4239295AC05B00BC4597 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		237E423B295AC08E00BC4597 /* ActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
 		23BBDF3329546E7800313A4B /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BBDF3629546E7800313A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23BBDF3829546E7800313A4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,7 +158,8 @@
 				2368820B29570AC3005A731A /* PhotoCollectionViewCell.swift */,
 				237E42332959800200BC4597 /* ActivityTableViewCell.swift */,
 				237E42342959800200BC4597 /* ActivityTableViewCell.xib */,
-				237E42372959837100BC4597 /* ActivityView.swift */,
+				237E4239295AC05B00BC4597 /* ActivityView.swift */,
+				237E423B295AC08E00BC4597 /* ActivityView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BBDF6F2954701C00313A4B /* Profile.storyboard in Resources */,
+				237E423C295AC08E00BC4597 /* ActivityView.xib in Resources */,
 				236881F429562A63005A731A /* FeedTableViewCell.xib in Resources */,
 				23BBDF6D2954701100313A4B /* NewPost.storyboard in Resources */,
 				23BBDF4629546E7B00313A4B /* LaunchScreen.storyboard in Resources */,
@@ -438,7 +442,7 @@
 				23BBDF3929546E7800313A4B /* SceneDelegate.swift in Sources */,
 				236881FC2956E42B005A731A /* NewPostPageViewController.swift in Sources */,
 				236882022956E82E005A731A /* TabBarDelegate.swift in Sources */,
-				237E42382959837100BC4597 /* ActivityView.swift in Sources */,
+				237E423A295AC05B00BC4597 /* ActivityView.swift in Sources */,
 				23BBDF76295470A700313A4B /* NewPostViewController.swift in Sources */,
 				237E42352959800200BC4597 /* ActivityTableViewCell.swift in Sources */,
 			);
